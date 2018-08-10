@@ -614,6 +614,7 @@ class OpenStackClient(object):
     COMMON = {'username', 'password', 'auth_url'}
     AUTH_SETS = [
         COMMON | {'tenant_name'},
+        COMMON | {'project_id'},
         COMMON | {'project_id', 'user_domain_name'},
         COMMON | {'project_id', 'project_name', 'user_domain_name'},
         COMMON | {'project_name', 'user_domain_name', 'project_domain_name'},
